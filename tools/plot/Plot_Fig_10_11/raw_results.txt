@@ -1,0 +1,1649 @@
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/patent_graph.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_patent_graph.txt -t 0 -t 8 -t 16 -t 4
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/patent_graph.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_patent_graph.txt
+  Num Vertices:     2445351
+  Num Edges:        5804865
+  Communities Used: 4
+-------------------------------------
+Total border vertices: 83394
+max weight: 4.75489
+R-score(16) = 0
+R-score(30) = 0.0099
+R-score(40) = 0.0031
+R-score(58) = 0
+R-score(60) = 0.0139
+R-score(61) = 0.0011
+R-score(69) = 0.0091
+R-score(71) = 0.0005
+R-score(91) = 0.0002
+R-score(93) = 0.0007
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 123 ms
+Step 2A: Find Neighbor Community Counts: 10 ms
+Step 2B: Compute Edge Weights: 2 ms
+Step 2C: Normalize Edge Weights: 1 ms
+Step 2D: Find BV Predecessor Count: 8 ms
+Step 2E: Compute G' Row Pointer: 2 ms
+Step 2F: Fill G' Column Indices: 8 ms
+Step 3: Compute R Scores: 17 ms
+Total Execution Time:: 171 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/patent_graph.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_patent_graph.txt -t 0 -t 8 -t 16 -t 4 -t 1
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/patent_graph.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_patent_graph.txt
+  Num Vertices:     2445351
+  Num Edges:        5804865
+  Communities Used: 5
+-------------------------------------
+Total border vertices: 102427
+max weight: 8
+R-score(15) = 0
+R-score(16) = 0
+R-score(20) = 0.0026
+R-score(30) = 0.0062
+R-score(39) = 0.0066
+R-score(40) = 0.0061
+R-score(45) = 0.0168
+R-score(54) = 0.0021
+R-score(58) = 0.0031
+R-score(60) = 0.0111
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 122 ms
+Step 2A: Find Neighbor Community Counts: 10 ms
+Step 2B: Compute Edge Weights: 2 ms
+Step 2C: Normalize Edge Weights: 1 ms
+Step 2D: Find BV Predecessor Count: 8 ms
+Step 2E: Compute G' Row Pointer: 2 ms
+Step 2F: Fill G' Column Indices: 9 ms
+Step 3: Compute R Scores: 16 ms
+Total Execution Time:: 170 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/patent_graph.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_patent_graph.txt -t 0 -t 8 -t 16 -t 4 -t 1 -t 2
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/patent_graph.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_patent_graph.txt
+  Num Vertices:     2445351
+  Num Edges:        5804865
+  Communities Used: 6
+-------------------------------------
+Total border vertices: 119615
+max weight: 11.6096
+R-score(6) = 0
+R-score(13) = 0.0109
+R-score(14) = 0.0526
+R-score(15) = 0
+R-score(16) = 0.0017
+R-score(17) = 0.0126
+R-score(20) = 0.0018
+R-score(30) = 0.0043
+R-score(39) = 0.0054
+R-score(40) = 0.0044
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 119 ms
+Step 2A: Find Neighbor Community Counts: 14 ms
+Step 2B: Compute Edge Weights: 2 ms
+Step 2C: Normalize Edge Weights: 1 ms
+Step 2D: Find BV Predecessor Count: 8 ms
+Step 2E: Compute G' Row Pointer: 2 ms
+Step 2F: Fill G' Column Indices: 9 ms
+Step 3: Compute R Scores: 16 ms
+Total Execution Time:: 171 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/patent_graph.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_patent_graph.txt -t 0 -t 8 -t 16 -t 4 -t 1 -t 2 -t 24
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/patent_graph.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_patent_graph.txt
+  Num Vertices:     2445351
+  Num Edges:        5804865
+  Communities Used: 7
+-------------------------------------
+Total border vertices: 141119
+max weight: 15.5098
+R-score(6) = 0
+R-score(10) = 0.0004
+R-score(13) = 0.0082
+R-score(14) = 0.0394
+R-score(15) = 0
+R-score(16) = 0.0013
+R-score(17) = 0.0099
+R-score(20) = 0.0044
+R-score(30) = 0.0055
+R-score(39) = 0.0054
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 123 ms
+Step 2A: Find Neighbor Community Counts: 12 ms
+Step 2B: Compute Edge Weights: 3 ms
+Step 2C: Normalize Edge Weights: 2 ms
+Step 2D: Find BV Predecessor Count: 8 ms
+Step 2E: Compute G' Row Pointer: 2 ms
+Step 2F: Fill G' Column Indices: 10 ms
+Step 3: Compute R Scores: 19 ms
+Total Execution Time:: 179 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/patent_graph.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_patent_graph.txt -t 0 -t 8 -t 16 -t 4 -t 1 -t 2 -t 24 -t 32
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/patent_graph.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_patent_graph.txt
+  Num Vertices:     2445351
+  Num Edges:        5804865
+  Communities Used: 8
+-------------------------------------
+Total border vertices: 149827
+max weight: 17.9581
+R-score(6) = 0
+R-score(10) = 0.0003
+R-score(13) = 0.007
+R-score(14) = 0.034
+R-score(15) = 0
+R-score(16) = 0.0011
+R-score(17) = 0.0091
+R-score(20) = 0.0039
+R-score(30) = 0.005
+R-score(39) = 0.0047
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 116 ms
+Step 2A: Find Neighbor Community Counts: 12 ms
+Step 2B: Compute Edge Weights: 4 ms
+Step 2C: Normalize Edge Weights: 2 ms
+Step 2D: Find BV Predecessor Count: 8 ms
+Step 2E: Compute G' Row Pointer: 2 ms
+Step 2F: Fill G' Column Indices: 9 ms
+Step 3: Compute R Scores: 18 ms
+Total Execution Time:: 171 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/patent_graph.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_patent_graph.txt -t 0 -t 8 -t 16 -t 4 -t 1 -t 2 -t 24 -t 32 -t 20
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/patent_graph.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_patent_graph.txt
+  Num Vertices:     2445351
+  Num Edges:        5804865
+  Communities Used: 9
+-------------------------------------
+Total border vertices: 156826
+max weight: 22.1412
+R-score(6) = 0
+R-score(10) = 0.0003
+R-score(13) = 0.0063
+R-score(14) = 0.0276
+R-score(15) = 0
+R-score(16) = 0.0009
+R-score(17) = 0.0074
+R-score(20) = 0.0036
+R-score(23) = 0.0006
+R-score(30) = 0.0042
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 121 ms
+Step 2A: Find Neighbor Community Counts: 13 ms
+Step 2B: Compute Edge Weights: 4 ms
+Step 2C: Normalize Edge Weights: 3 ms
+Step 2D: Find BV Predecessor Count: 8 ms
+Step 2E: Compute G' Row Pointer: 2 ms
+Step 2F: Fill G' Column Indices: 9 ms
+Step 3: Compute R Scores: 17 ms
+Total Execution Time:: 177 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/patent_graph.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_patent_graph.txt -t 0 -t 8 -t 16 -t 4 -t 1 -t 2 -t 24 -t 32 -t 20 -t 12
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/patent_graph.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_patent_graph.txt
+  Num Vertices:     2445351
+  Num Edges:        5804865
+  Communities Used: 10
+-------------------------------------
+Total border vertices: 164262
+max weight: 23.0389
+R-score(6) = 0
+R-score(10) = 0.0003
+R-score(13) = 0.006
+R-score(14) = 0.0265
+R-score(15) = 0
+R-score(16) = 0.0009
+R-score(17) = 0.0071
+R-score(20) = 0.0035
+R-score(23) = 0.0006
+R-score(30) = 0.0045
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 117 ms
+Step 2A: Find Neighbor Community Counts: 14 ms
+Step 2B: Compute Edge Weights: 4 ms
+Step 2C: Normalize Edge Weights: 3 ms
+Step 2D: Find BV Predecessor Count: 8 ms
+Step 2E: Compute G' Row Pointer: 2 ms
+Step 2F: Fill G' Column Indices: 9 ms
+Step 3: Compute R Scores: 18 ms
+Total Execution Time:: 175 ms
+
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/twitter.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_twitter.txt -t 1 -t 4 -t 8 -t 2
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/twitter.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_twitter.txt
+  Num Vertices:     92180
+  Num Edges:        188971
+  Communities Used: 4
+-------------------------------------
+Total border vertices: 5230
+max weight: 8
+R-score(3) = 0.017
+R-score(5) = 0.076
+R-score(6) = 0
+R-score(9) = 0
+R-score(41) = 0.0006
+R-score(44) = 0.1138
+R-score(52) = 0
+R-score(54) = 0
+R-score(57) = 0.0128
+R-score(92) = 0
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 108 ms
+Step 2A: Find Neighbor Community Counts: 0 ms
+Step 2B: Compute Edge Weights: 0 ms
+Step 2C: Normalize Edge Weights: 0 ms
+Step 2D: Find BV Predecessor Count: 0 ms
+Step 2E: Compute G' Row Pointer: 0 ms
+Step 2F: Fill G' Column Indices: 0 ms
+Step 3: Compute R Scores: 1 ms
+Total Execution Time:: 109 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/twitter.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_twitter.txt -t 1 -t 4 -t 8 -t 2 -t 9
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/twitter.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_twitter.txt
+  Num Vertices:     92180
+  Num Edges:        188971
+  Communities Used: 5
+-------------------------------------
+Total border vertices: 6343
+max weight: 11.25
+R-score(3) = 0.0089
+R-score(5) = 0.0581
+R-score(6) = 0
+R-score(9) = 0
+R-score(41) = 0.0024
+R-score(44) = 0.0809
+R-score(52) = 0
+R-score(54) = 0.0086
+R-score(57) = 0.0176
+R-score(92) = 0
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 109 ms
+Step 2A: Find Neighbor Community Counts: 0 ms
+Step 2B: Compute Edge Weights: 0 ms
+Step 2C: Normalize Edge Weights: 0 ms
+Step 2D: Find BV Predecessor Count: 0 ms
+Step 2E: Compute G' Row Pointer: 0 ms
+Step 2F: Fill G' Column Indices: 0 ms
+Step 3: Compute R Scores: 1 ms
+Total Execution Time:: 110 ms
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/twitter.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_twitter.txt -t 1 -t 4 -t 8 -t 2 -t 9 -t 5
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/twitter.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_twitter.txt
+  Num Vertices:     92180
+  Num Edges:        188971
+  Communities Used: 6
+-------------------------------------
+Total border vertices: 7795
+max weight: 14.5163
+R-score(3) = 0.0135
+R-score(5) = 0.045
+R-score(6) = 0
+R-score(9) = 0
+R-score(41) = 0.0018
+R-score(44) = 0.0627
+R-score(52) = 0
+R-score(54) = 0.0067
+R-score(57) = 0.0318
+R-score(61) = 0.0109
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 110 ms
+Step 2A: Find Neighbor Community Counts: 1 ms
+Step 2B: Compute Edge Weights: 0 ms
+Step 2C: Normalize Edge Weights: 0 ms
+Step 2D: Find BV Predecessor Count: 0 ms
+Step 2E: Compute G' Row Pointer: 0 ms
+Step 2F: Fill G' Column Indices: 0 ms
+Step 3: Compute R Scores: 1 ms
+Total Execution Time:: 112 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/twitter.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_twitter.txt -t 1 -t 4 -t 8 -t 2 -t 9 -t 5 -t 13
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/twitter.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_twitter.txt
+  Num Vertices:     92180
+  Num Edges:        188971
+  Communities Used: 7
+-------------------------------------
+Total border vertices: 8135
+max weight: 15.5098
+R-score(3) = 0.0136
+R-score(5) = 0.0421
+R-score(6) = 0
+R-score(9) = 0.0161
+R-score(41) = 0.0017
+R-score(44) = 0.0587
+R-score(52) = 0
+R-score(54) = 0.0063
+R-score(57) = 0.0297
+R-score(61) = 0.0102
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 108 ms
+Step 2A: Find Neighbor Community Counts: 1 ms
+Step 2B: Compute Edge Weights: 0 ms
+Step 2C: Normalize Edge Weights: 0 ms
+Step 2D: Find BV Predecessor Count: 0 ms
+Step 2E: Compute G' Row Pointer: 0 ms
+Step 2F: Fill G' Column Indices: 0 ms
+Step 3: Compute R Scores: 1 ms
+Total Execution Time:: 110 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/twitter.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_twitter.txt -t 1 -t 4 -t 8 -t 2 -t 9 -t 5 -t 13 -t 12
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/twitter.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_twitter.txt
+  Num Vertices:     92180
+  Num Edges:        188971
+  Communities Used: 8
+-------------------------------------
+Total border vertices: 8371
+max weight: 15.5098
+R-score(3) = 0.0331
+R-score(5) = 0.0421
+R-score(6) = 0
+R-score(9) = 0.0161
+R-score(41) = 0.0017
+R-score(44) = 0.0587
+R-score(52) = 0
+R-score(54) = 0.0063
+R-score(57) = 0.0297
+R-score(61) = 0.0102
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 108 ms
+Step 2A: Find Neighbor Community Counts: 1 ms
+Step 2B: Compute Edge Weights: 0 ms
+Step 2C: Normalize Edge Weights: 0 ms
+Step 2D: Find BV Predecessor Count: 0 ms
+Step 2E: Compute G' Row Pointer: 0 ms
+Step 2F: Fill G' Column Indices: 0 ms
+Step 3: Compute R Scores: 1 ms
+Total Execution Time:: 110 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/twitter.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_twitter.txt -t 1 -t 4 -t 8 -t 2 -t 9 -t 5 -t 13 -t 12 -t 3
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/twitter.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_twitter.txt
+  Num Vertices:     92180
+  Num Edges:        188971
+  Communities Used: 9
+-------------------------------------
+Total border vertices: 8420
+max weight: 15.5098
+R-score(3) = 0.0331
+R-score(5) = 0.0421
+R-score(6) = 0
+R-score(9) = 0.0161
+R-score(41) = 0.0017
+R-score(44) = 0.0587
+R-score(52) = 0
+R-score(54) = 0.0063
+R-score(57) = 0.0297
+R-score(61) = 0.0102
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 112 ms
+Step 2A: Find Neighbor Community Counts: 1 ms
+Step 2B: Compute Edge Weights: 0 ms
+Step 2C: Normalize Edge Weights: 0 ms
+Step 2D: Find BV Predecessor Count: 0 ms
+Step 2E: Compute G' Row Pointer: 0 ms
+Step 2F: Fill G' Column Indices: 0 ms
+Step 3: Compute R Scores: 1 ms
+Total Execution Time:: 114 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/twitter.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_twitter.txt -t 1 -t 4 -t 8 -t 2 -t 9 -t 5 -t 13 -t 12 -t 3 -t 11
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/twitter.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_twitter.txt
+  Num Vertices:     92180
+  Num Edges:        188971
+  Communities Used: 10
+-------------------------------------
+Total border vertices: 8440
+max weight: 15.5098
+R-score(3) = 0.0331
+R-score(5) = 0.0421
+R-score(6) = 0
+R-score(9) = 0.0161
+R-score(41) = 0.0017
+R-score(44) = 0.0587
+R-score(52) = 0
+R-score(54) = 0.0063
+R-score(57) = 0.0297
+R-score(61) = 0.0102
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 110 ms
+Step 2A: Find Neighbor Community Counts: 1 ms
+Step 2B: Compute Edge Weights: 0 ms
+Step 2C: Normalize Edge Weights: 0 ms
+Step 2D: Find BV Predecessor Count: 0 ms
+Step 2E: Compute G' Row Pointer: 0 ms
+Step 2F: Fill G' Column Indices: 0 ms
+Step 3: Compute R Scores: 1 ms
+Total Execution Time:: 112 ms
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/coauthor.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_coauthor.txt  -t 1 -t 8 -t 32 -t 16
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/coauthor.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_coauthor.txt
+  Num Vertices:     53442
+  Num Edges:        127968
+  Communities Used: 4
+-------------------------------------
+Total border vertices: 2541
+max weight: 8
+R-score(28) = 0
+R-score(29) = 0
+R-score(44) = 0
+R-score(45) = 0
+R-score(55) = 0
+R-score(60) = 0
+R-score(85) = 0.0409
+R-score(86) = 0
+R-score(89) = 0
+R-score(90) = 0
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 112 ms
+Step 2A: Find Neighbor Community Counts: 0 ms
+Step 2B: Compute Edge Weights: 0 ms
+Step 2C: Normalize Edge Weights: 0 ms
+Step 2D: Find BV Predecessor Count: 0 ms
+Step 2E: Compute G' Row Pointer: 0 ms
+Step 2F: Fill G' Column Indices: 0 ms
+Step 3: Compute R Scores: 0 ms
+Total Execution Time:: 112 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/coauthor.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_coauthor.txt  -t 1 -t 8 -t 32 -t 16 -t 4
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/coauthor.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_coauthor.txt
+  Num Vertices:     53442
+  Num Edges:        127968
+  Communities Used: 5
+-------------------------------------
+Total border vertices: 3681
+max weight: 11.1796
+R-score(13) = 0.0376
+R-score(14) = 0.015
+R-score(21) = 0.0077
+R-score(22) = 0
+R-score(28) = 0
+R-score(29) = 0
+R-score(42) = 0.0039
+R-score(44) = 0.0052
+R-score(45) = 0
+R-score(55) = 0
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 109 ms
+Step 2A: Find Neighbor Community Counts: 0 ms
+Step 2B: Compute Edge Weights: 0 ms
+Step 2C: Normalize Edge Weights: 0 ms
+Step 2D: Find BV Predecessor Count: 0 ms
+Step 2E: Compute G' Row Pointer: 0 ms
+Step 2F: Fill G' Column Indices: 0 ms
+Step 3: Compute R Scores: 0 ms
+Total Execution Time:: 109 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/coauthor.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_coauthor.txt  -t 1 -t 8 -t 32 -t 16 -t 4 -t 2
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/coauthor.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_coauthor.txt
+  Num Vertices:     53442
+  Num Edges:        127968
+  Communities Used: 6
+-------------------------------------
+Total border vertices: 5197
+max weight: 11.6096
+R-score(13) = 0.0362
+R-score(14) = 0.0145
+R-score(21) = 0.0074
+R-score(22) = 0
+R-score(28) = 0
+R-score(29) = 0
+R-score(42) = 0.0037
+R-score(44) = 0.0079
+R-score(45) = 0.0089
+R-score(46) = 0.0045
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 109 ms
+Step 2A: Find Neighbor Community Counts: 0 ms
+Step 2B: Compute Edge Weights: 0 ms
+Step 2C: Normalize Edge Weights: 0 ms
+Step 2D: Find BV Predecessor Count: 0 ms
+Step 2E: Compute G' Row Pointer: 0 ms
+Step 2F: Fill G' Column Indices: 0 ms
+Step 3: Compute R Scores: 0 ms
+Total Execution Time:: 109 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/coauthor.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_coauthor.txt  -t 1 -t 8 -t 32 -t 16 -t 4 -t 2 -t 40
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/coauthor.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_coauthor.txt
+  Num Vertices:     53442
+  Num Edges:        127968
+  Communities Used: 7
+-------------------------------------
+Total border vertices: 6997
+max weight: 15.5098
+R-score(13) = 0.0363
+R-score(14) = 0.0131
+R-score(21) = 0.0056
+R-score(22) = 0
+R-score(28) = 0
+R-score(29) = 0
+R-score(42) = 0.0028
+R-score(44) = 0.0059
+R-score(45) = 0.0066
+R-score(46) = 0.0034
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 114 ms
+Step 2A: Find Neighbor Community Counts: 0 ms
+Step 2B: Compute Edge Weights: 0 ms
+Step 2C: Normalize Edge Weights: 0 ms
+Step 2D: Find BV Predecessor Count: 0 ms
+Step 2E: Compute G' Row Pointer: 0 ms
+Step 2F: Fill G' Column Indices: 0 ms
+Step 3: Compute R Scores: 0 ms
+Total Execution Time:: 114 ms
+
+
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/coauthor.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_coauthor.txt  -t 1 -t 8 -t 32 -t 16 -t 4 -t 2 -t 40 -t 17
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/coauthor.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_coauthor.txt
+  Num Vertices:     53442
+  Num Edges:        127968
+  Communities Used: 8
+-------------------------------------
+Total border vertices: 8290
+max weight: 15.5098
+R-score(13) = 0.0363
+R-score(14) = 0.0131
+R-score(16) = 0.0085
+R-score(17) = 0.0016
+R-score(18) = 0.0011
+R-score(19) = 0.0637
+R-score(21) = 0.0056
+R-score(22) = 0
+R-score(28) = 0
+R-score(29) = 0
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 118 ms
+Step 2A: Find Neighbor Community Counts: 1 ms
+Step 2B: Compute Edge Weights: 0 ms
+Step 2C: Normalize Edge Weights: 0 ms
+Step 2D: Find BV Predecessor Count: 0 ms
+Step 2E: Compute G' Row Pointer: 0 ms
+Step 2F: Fill G' Column Indices: 0 ms
+Step 3: Compute R Scores: 0 ms
+Total Execution Time:: 119 ms
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/coauthor.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_coauthor.txt  -t 1 -t 8 -t 32 -t 16 -t 4 -t 2 -t 40 -t 17 -t 9
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/coauthor.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_coauthor.txt
+  Num Vertices:     53442
+  Num Edges:        127968
+  Communities Used: 9
+-------------------------------------
+Total border vertices: 9172
+max weight: 15.5098
+R-score(13) = 0.0363
+R-score(14) = 0.0131
+R-score(16) = 0.0183
+R-score(17) = 0.0025
+R-score(18) = 0.0018
+R-score(19) = 0.105
+R-score(21) = 0.0056
+R-score(22) = 0
+R-score(24) = 0.0027
+R-score(28) = 0
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 128 ms
+Step 2A: Find Neighbor Community Counts: 1 ms
+Step 2B: Compute Edge Weights: 0 ms
+Step 2C: Normalize Edge Weights: 0 ms
+Step 2D: Find BV Predecessor Count: 0 ms
+Step 2E: Compute G' Row Pointer: 0 ms
+Step 2F: Fill G' Column Indices: 0 ms
+Step 3: Compute R Scores: 0 ms
+Total Execution Time:: 129 ms
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/coauthor.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/community_coauthor.txt  -t 1 -t 8 -t 32 -t 16 -t 4 -t 2 -t 40 -t 17 -t 9 -t 3
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/coauthor.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/community_coauthor.txt
+  Num Vertices:     53442
+  Num Edges:        127968
+  Communities Used: 10
+-------------------------------------
+Total border vertices: 9958
+max weight: 20.1919
+R-score(13) = 0.0279
+R-score(14) = 0.0101
+R-score(16) = 0.014
+R-score(17) = 0.002
+R-score(18) = 0.0013
+R-score(19) = 0.0844
+R-score(21) = 0.0043
+R-score(22) = 0
+R-score(24) = 0.0021
+R-score(28) = 0.0111
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 110 ms
+Step 2A: Find Neighbor Community Counts: 1 ms
+Step 2B: Compute Edge Weights: 0 ms
+Step 2C: Normalize Edge Weights: 0 ms
+Step 2D: Find BV Predecessor Count: 0 ms
+Step 2E: Compute G' Row Pointer: 0 ms
+Step 2F: Fill G' Column Indices: 0 ms
+Step 3: Compute R Scores: 1 ms
+Total Execution Time:: 112 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-orkut.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-orkut.txt  -t 4 -t 11 -t 3 -t 2
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-orkut.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-orkut.txt
+  Num Vertices:     2997166
+  Num Edges:        106349209
+  Communities Used: 4
+-------------------------------------
+Total border vertices: 612058
+max weight: 8
+R-score(2) = 0.0171
+R-score(3) = 0.0107
+R-score(4) = 0.0263
+R-score(5) = 0.0172
+R-score(6) = 0.0281
+R-score(9) = 0.0332
+R-score(14) = 0.0053
+R-score(15) = 0.0056
+R-score(18) = 0.0005
+R-score(19) = 0.0474
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 199 ms
+Step 2A: Find Neighbor Community Counts: 114 ms
+Step 2B: Compute Edge Weights: 20 ms
+Step 2C: Normalize Edge Weights: 8 ms
+Step 2D: Find BV Predecessor Count: 87 ms
+Step 2E: Compute G' Row Pointer: 5 ms
+Step 2F: Fill G' Column Indices: 110 ms
+Step 3: Compute R Scores: 2106 ms
+Total Execution Time:: 2649 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-orkut.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-orkut.txt  -t 4 -t 11 -t 3 -t 2 -t 8
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-orkut.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-orkut.txt
+  Num Vertices:     2997166
+  Num Edges:        106349209
+  Communities Used: 5
+-------------------------------------
+Total border vertices: 1081862
+max weight: 11.6096
+R-score(2) = 0.0128
+R-score(3) = 0.0074
+R-score(4) = 0.0206
+R-score(5) = 0.0119
+R-score(6) = 0.0211
+R-score(9) = 0.025
+R-score(14) = 0.0037
+R-score(15) = 0.0041
+R-score(18) = 0.0004
+R-score(19) = 0.0346
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 193 ms
+Step 2A: Find Neighbor Community Counts: 120 ms
+Step 2B: Compute Edge Weights: 31 ms
+Step 2C: Normalize Edge Weights: 11 ms
+Step 2D: Find BV Predecessor Count: 91 ms
+Step 2E: Compute G' Row Pointer: 8 ms
+Step 2F: Fill G' Column Indices: 126 ms
+Step 3: Compute R Scores: 2397 ms
+Total Execution Time:: 2977 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-orkut.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-orkut.txt  -t 4 -t 11 -t 3 -t 2 -t 8 -t 10
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-orkut.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-orkut.txt
+  Num Vertices:     2997166
+  Num Edges:        106349209
+  Communities Used: 6
+-------------------------------------
+Total border vertices: 1278840
+max weight: 15.5098
+R-score(2) = 0.0097
+R-score(3) = 0.0055
+R-score(4) = 0.0154
+R-score(5) = 0.0089
+R-score(6) = 0.0163
+R-score(9) = 0.0187
+R-score(14) = 0.0028
+R-score(15) = 0.0031
+R-score(18) = 0.0003
+R-score(19) = 0.0263
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 193 ms
+Step 2A: Find Neighbor Community Counts: 131 ms
+Step 2B: Compute Edge Weights: 36 ms
+Step 2C: Normalize Edge Weights: 15 ms
+Step 2D: Find BV Predecessor Count: 94 ms
+Step 2E: Compute G' Row Pointer: 10 ms
+Step 2F: Fill G' Column Indices: 156 ms
+Step 3: Compute R Scores: 45064 ms
+Total Execution Time:: 45699 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-orkut.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-orkut.txt  -t 4 -t 11 -t 3 -t 2 -t 8 -t 10 -t 7
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-orkut.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-orkut.txt
+  Num Vertices:     2997166
+  Num Edges:        106349209
+  Communities Used: 7
+-------------------------------------
+Total border vertices: 1324804
+max weight: 19.6515
+R-score(2) = 0.0084
+R-score(3) = 0.0049
+R-score(4) = 0.0157
+R-score(5) = 0.0074
+R-score(6) = 0.0136
+R-score(9) = 0.0162
+R-score(14) = 0.0023
+R-score(15) = 0.0025
+R-score(18) = 0.0002
+R-score(19) = 0.0223
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 193 ms
+Step 2A: Find Neighbor Community Counts: 134 ms
+Step 2B: Compute Edge Weights: 41 ms
+Step 2C: Normalize Edge Weights: 17 ms
+Step 2D: Find BV Predecessor Count: 93 ms
+Step 2E: Compute G' Row Pointer: 10 ms
+Step 2F: Fill G' Column Indices: 157 ms
+Step 3: Compute R Scores: 44612 ms
+Total Execution Time:: 45257 ms
+
+
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-orkut.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-orkut.txt  -t 4 -t 11 -t 3 -t 2 -t 8 -t 10 -t 7 -t 6
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-orkut.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-orkut.txt
+  Num Vertices:     2997166
+  Num Edges:        106349209
+  Communities Used: 8
+-------------------------------------
+Total border vertices: 1437144
+max weight: 23.7843
+R-score(2) = 0.0091
+R-score(3) = 0.0084
+R-score(4) = 0.0259
+R-score(5) = 0.0084
+R-score(6) = 0.0136
+R-score(9) = 0.0171
+R-score(14) = 0.0051
+R-score(15) = 0.0057
+R-score(18) = 0.0003
+R-score(19) = 0.0223
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 208 ms
+Step 2A: Find Neighbor Community Counts: 160 ms
+Step 2B: Compute Edge Weights: 45 ms
+Step 2C: Normalize Edge Weights: 24 ms
+Step 2D: Find BV Predecessor Count: 106 ms
+Step 2E: Compute G' Row Pointer: 11 ms
+Step 2F: Fill G' Column Indices: 183 ms
+Step 3: Compute R Scores: 45292 ms
+Total Execution Time:: 46029 ms
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-orkut.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-orkut.txt  -t 4 -t 11 -t 3 -t 2 -t 8 -t 10 -t 7 -t 6 -t 13
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-orkut.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-orkut.txt
+  Num Vertices:     2997166
+  Num Edges:        106349209
+  Communities Used: 9
+-------------------------------------
+Total border vertices: 1520316
+max weight: 28.0583
+R-score(2) = 0.0077
+R-score(3) = 0.0071
+R-score(4) = 0.0219
+R-score(5) = 0.0071
+R-score(6) = 0.0115
+R-score(9) = 0.0145
+R-score(14) = 0.0044
+R-score(15) = 0.0049
+R-score(18) = 0.0002
+R-score(19) = 0.0189
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 204 ms
+Step 2A: Find Neighbor Community Counts: 169 ms
+Step 2B: Compute Edge Weights: 51 ms
+Step 2C: Normalize Edge Weights: 30 ms
+Step 2D: Find BV Predecessor Count: 105 ms
+Step 2E: Compute G' Row Pointer: 11 ms
+Step 2F: Fill G' Column Indices: 188 ms
+Step 3: Compute R Scores: 54655 ms
+Total Execution Time:: 55413 ms
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-orkut.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-orkut.txt  -t 4 -t 11 -t 3 -t 2 -t 8 -t 10 -t 7 -t 6 -t 13 -t 15
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-orkut.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-orkut.txt
+  Num Vertices:     2997166
+  Num Edges:        106349209
+  Communities Used: 10
+-------------------------------------
+Total border vertices: 1591303
+max weight: 32.4958
+R-score(2) = 0.0067
+R-score(3) = 0.0062
+R-score(4) = 0.0193
+R-score(5) = 0.0062
+R-score(6) = 0.01
+R-score(9) = 0.0125
+R-score(14) = 0.0038
+R-score(15) = 0.0042
+R-score(18) = 0.0002
+R-score(19) = 0.0166
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 205 ms
+Step 2A: Find Neighbor Community Counts: 169 ms
+Step 2B: Compute Edge Weights: 49 ms
+Step 2C: Normalize Edge Weights: 28 ms
+Step 2D: Find BV Predecessor Count: 101 ms
+Step 2E: Compute G' Row Pointer: 11 ms
+Step 2F: Fill G' Column Indices: 191 ms
+Step 3: Compute R Scores: 62897 ms
+Total Execution Time:: 63651 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-lastfm.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-lastfm.txt -t 1 -t 37 -t 35 -t 18
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-lastfm.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-lastfm.txt
+  Num Vertices:     1191805
+  Num Edges:        4519330
+  Communities Used: 4
+-------------------------------------
+Total border vertices: 74841
+max weight: 8
+R-score(2) = 0.0177
+R-score(8) = 0.0005
+R-score(9) = 0.0967
+R-score(11) = 0.004
+R-score(16) = 0.0207
+R-score(18) = 0.0006
+R-score(19) = 0.0007
+R-score(20) = 0.0007
+R-score(21) = 0.1308
+R-score(23) = 0
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 120 ms
+Step 2A: Find Neighbor Community Counts: 8 ms
+Step 2B: Compute Edge Weights: 2 ms
+Step 2C: Normalize Edge Weights: 1 ms
+Step 2D: Find BV Predecessor Count: 6 ms
+Step 2E: Compute G' Row Pointer: 1 ms
+Step 2F: Fill G' Column Indices: 9 ms
+Step 3: Compute R Scores: 357 ms
+Total Execution Time:: 504 ms
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-lastfm.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-lastfm.txt -t 1 -t 37 -t 35 -t 18 -t 12
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-lastfm.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-lastfm.txt
+  Num Vertices:     1191805
+  Num Edges:        4519330
+  Communities Used: 5
+-------------------------------------
+Total border vertices: 103218
+max weight: 11.6096
+R-score(2) = 0.0194
+R-score(8) = 0.0004
+R-score(9) = 0.1018
+R-score(11) = 0.0041
+R-score(16) = 0.1476
+R-score(18) = 0.0005
+R-score(19) = 0.0006
+R-score(20) = 0.0008
+R-score(21) = 0.4783
+R-score(23) = 0
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 114 ms
+Step 2A: Find Neighbor Community Counts: 9 ms
+Step 2B: Compute Edge Weights: 2 ms
+Step 2C: Normalize Edge Weights: 1 ms
+Step 2D: Find BV Predecessor Count: 6 ms
+Step 2E: Compute G' Row Pointer: 1 ms
+Step 2F: Fill G' Column Indices: 9 ms
+Step 3: Compute R Scores: 828 ms
+Total Execution Time:: 970 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-lastfm.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-lastfm.txt -t 1 -t 37 -t 35 -t 18 -t 12 -t 28
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-lastfm.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-lastfm.txt
+  Num Vertices:     1191805
+  Num Edges:        4519330
+  Communities Used: 6
+-------------------------------------
+Total border vertices: 124498
+max weight: 15.5098
+R-score(2) = 0.0405
+R-score(4) = 0.0027
+R-score(5) = 0.0104
+R-score(8) = 0.0005
+R-score(9) = 0.1643
+R-score(11) = 0.0048
+R-score(16) = 0.1453
+R-score(18) = 0.0023
+R-score(19) = 0.0005
+R-score(20) = 0.0009
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 116 ms
+Step 2A: Find Neighbor Community Counts: 10 ms
+Step 2B: Compute Edge Weights: 2 ms
+Step 2C: Normalize Edge Weights: 1 ms
+Step 2D: Find BV Predecessor Count: 7 ms
+Step 2E: Compute G' Row Pointer: 1 ms
+Step 2F: Fill G' Column Indices: 10 ms
+Step 3: Compute R Scores: 1384 ms
+Total Execution Time:: 1531 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-lastfm.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-lastfm.txt -t 1 -t 37 -t 35 -t 18 -t 12 -t 28 -t 4
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-lastfm.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-lastfm.txt
+  Num Vertices:     1191805
+  Num Edges:        4519330
+  Communities Used: 7
+-------------------------------------
+Total border vertices: 136377
+max weight: 19.3247
+R-score(2) = 0.0391
+R-score(4) = 0.0027
+R-score(5) = 0.01
+R-score(7) = 0.0081
+R-score(8) = 0.0005
+R-score(9) = 0.1576
+R-score(11) = 0.0042
+R-score(16) = 0.1375
+R-score(18) = 0.0017
+R-score(19) = 0.0005
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 120 ms
+Step 2A: Find Neighbor Community Counts: 11 ms
+Step 2B: Compute Edge Weights: 3 ms
+Step 2C: Normalize Edge Weights: 2 ms
+Step 2D: Find BV Predecessor Count: 7 ms
+Step 2E: Compute G' Row Pointer: 1 ms
+Step 2F: Fill G' Column Indices: 10 ms
+Step 3: Compute R Scores: 1555 ms
+Total Execution Time:: 1709 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-lastfm.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-lastfm.txt -t 1 -t 37 -t 35 -t 18 -t 12 -t 28 -t 4 -t 11
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-lastfm.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-lastfm.txt
+  Num Vertices:     1191805
+  Num Edges:        4519330
+  Communities Used: 8
+-------------------------------------
+Total border vertices: 147875
+max weight: 23.5816
+R-score(1) = 0.0006
+R-score(2) = 0.038
+R-score(4) = 0.003
+R-score(5) = 0.01
+R-score(7) = 0.0077
+R-score(8) = 0.0004
+R-score(9) = 0.1748
+R-score(11) = 0.0044
+R-score(16) = 0.128
+R-score(17) = 0
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 113 ms
+Step 2A: Find Neighbor Community Counts: 11 ms
+Step 2B: Compute Edge Weights: 3 ms
+Step 2C: Normalize Edge Weights: 2 ms
+Step 2D: Find BV Predecessor Count: 6 ms
+Step 2E: Compute G' Row Pointer: 1 ms
+Step 2F: Fill G' Column Indices: 10 ms
+Step 3: Compute R Scores: 2172 ms
+Total Execution Time:: 2318 ms
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-lastfm.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-lastfm.txt -t 1 -t 37 -t 35 -t 18 -t 12 -t 28 -t 4 -t 11 -t 39
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-lastfm.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-lastfm.txt
+  Num Vertices:     1191805
+  Num Edges:        4519330
+  Communities Used: 9
+-------------------------------------
+Total border vertices: 175908
+max weight: 28.0974
+R-score(1) = 0.0005
+R-score(2) = 0.0479
+R-score(4) = 0.0047
+R-score(5) = 0.0593
+R-score(7) = 0.0076
+R-score(8) = 0.0007
+R-score(9) = 0.1774
+R-score(11) = 0.0046
+R-score(16) = 0.1902
+R-score(17) = 0
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 118 ms
+Step 2A: Find Neighbor Community Counts: 14 ms
+Step 2B: Compute Edge Weights: 4 ms
+Step 2C: Normalize Edge Weights: 3 ms
+Step 2D: Find BV Predecessor Count: 7 ms
+Step 2E: Compute G' Row Pointer: 1 ms
+Step 2F: Fill G' Column Indices: 12 ms
+Step 3: Compute R Scores: 3369 ms
+Total Execution Time:: 3528 ms
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-lastfm.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-lastfm.txt -t 1 -t 37 -t 35 -t 18 -t 12 -t 28 -t 4 -t 11 -t 39 -t 17
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-lastfm.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-lastfm.txt
+  Num Vertices:     1191805
+  Num Edges:        4519330
+  Communities Used: 10
+-------------------------------------
+Total border vertices: 193150
+max weight: 32.7009
+R-score(1) = 0.0005
+R-score(2) = 0.048
+R-score(4) = 0.006
+R-score(5) = 0.0576
+R-score(7) = 0.0078
+R-score(8) = 0.0008
+R-score(9) = 0.1782
+R-score(11) = 0.0042
+R-score(16) = 0.196
+R-score(17) = 0
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 128 ms
+Step 2A: Find Neighbor Community Counts: 17 ms
+Step 2B: Compute Edge Weights: 6 ms
+Step 2C: Normalize Edge Weights: 5 ms
+Step 2D: Find BV Predecessor Count: 7 ms
+Step 2E: Compute G' Row Pointer: 1 ms
+Step 2F: Fill G' Column Indices: 14 ms
+Step 3: Compute R Scores: 3787 ms
+Total Execution Time:: 3965 ms
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-pokec.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-pokec.txt -t 11 -t 16 -t 6 -t 2
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-pokec.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-pokec.txt
+  Num Vertices:     1632803
+  Num Edges:        22301964
+  Communities Used: 4
+-------------------------------------
+Total border vertices: 186394
+max weight: 8
+R-score(2) = 0
+R-score(6) = 0.0791
+R-score(15) = 0.0962
+R-score(21) = 0.0012
+R-score(24) = 0.0003
+R-score(25) = 0.0005
+R-score(27) = 0.0007
+R-score(38) = 0.0105
+R-score(39) = 0.0018
+R-score(42) = 0
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 149 ms
+Step 2A: Find Neighbor Community Counts: 25 ms
+Step 2B: Compute Edge Weights: 6 ms
+Step 2C: Normalize Edge Weights: 2 ms
+Step 2D: Find BV Predecessor Count: 20 ms
+Step 2E: Compute G' Row Pointer: 2 ms
+Step 2F: Fill G' Column Indices: 23 ms
+Step 3: Compute R Scores: 32 ms
+Total Execution Time:: 259 ms
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-pokec.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-pokec.txt -t 11 -t 16 -t 6 -t 2 -t 9
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-pokec.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-pokec.txt
+  Num Vertices:     1632803
+  Num Edges:        22301964
+  Communities Used: 5
+-------------------------------------
+Total border vertices: 275325
+max weight: 11.6096
+R-score(2) = 0
+R-score(6) = 0.0838
+R-score(15) = 0.1015
+R-score(20) = 0.0028
+R-score(21) = 0.0013
+R-score(24) = 0.0003
+R-score(25) = 0.0007
+R-score(27) = 0.0007
+R-score(30) = 0.0007
+R-score(32) = 0.0001
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 129 ms
+Step 2A: Find Neighbor Community Counts: 25 ms
+Step 2B: Compute Edge Weights: 7 ms
+Step 2C: Normalize Edge Weights: 3 ms
+Step 2D: Find BV Predecessor Count: 20 ms
+Step 2E: Compute G' Row Pointer: 4 ms
+Step 2F: Fill G' Column Indices: 23 ms
+Step 3: Compute R Scores: 44 ms
+Total Execution Time:: 255 ms
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-pokec.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-pokec.txt -t 11 -t 16 -t 6 -t 2 -t 9 -t 10
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-pokec.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-pokec.txt
+  Num Vertices:     1632803
+  Num Edges:        22301964
+  Communities Used: 6
+-------------------------------------
+Total border vertices: 336641
+max weight: 15.5098
+R-score(2) = 0
+R-score(6) = 0.0906
+R-score(10) = 0
+R-score(15) = 0.1028
+R-score(17) = 0.0044
+R-score(20) = 0.0042
+R-score(21) = 0.0053
+R-score(24) = 0.0002
+R-score(25) = 0.0006
+R-score(27) = 0.0006
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 128 ms
+Step 2A: Find Neighbor Community Counts: 30 ms
+Step 2B: Compute Edge Weights: 8 ms
+Step 2C: Normalize Edge Weights: 4 ms
+Step 2D: Find BV Predecessor Count: 21 ms
+Step 2E: Compute G' Row Pointer: 4 ms
+Step 2F: Fill G' Column Indices: 27 ms
+Step 3: Compute R Scores: 1091 ms
+Total Execution Time:: 1313 ms
+
+
+
+[akkcm@g004 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-pokec.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-pokec.txt -t 11 -t 16 -t 6 -t 2 -t 9 -t 10 -t 1
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-pokec.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-pokec.txt
+  Num Vertices:     1632803
+  Num Edges:        22301964
+  Communities Used: 7
+-------------------------------------
+Total border vertices: 404657
+max weight: 19.6515
+R-score(1) = 0
+R-score(2) = 0
+R-score(6) = 0.0988
+R-score(7) = 0.001
+R-score(9) = 0
+R-score(10) = 0.0004
+R-score(11) = 0
+R-score(12) = 0
+R-score(13) = 0.0002
+R-score(14) = 0
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 147 ms
+Step 2A: Find Neighbor Community Counts: 33 ms
+Step 2B: Compute Edge Weights: 10 ms
+Step 2C: Normalize Edge Weights: 5 ms
+Step 2D: Find BV Predecessor Count: 22 ms
+Step 2E: Compute G' Row Pointer: 4 ms
+Step 2F: Fill G' Column Indices: 29 ms
+Step 3: Compute R Scores: 2084 ms
+Total Execution Time:: 2334 ms
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-pokec.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-pokec.txt -t 11 -t 16 -t 6 -t 2 -t 9 -t 10 -t 1 -t 14
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-pokec.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-pokec.txt
+  Num Vertices:     1632803
+  Num Edges:        22301964
+  Communities Used: 8
+-------------------------------------
+Total border vertices: 468406
+max weight: 24
+R-score(1) = 0
+R-score(2) = 0
+R-score(6) = 0.1013
+R-score(7) = 0.001
+R-score(9) = 0.001
+R-score(10) = 0.0001
+R-score(11) = 0
+R-score(12) = 0.0006
+R-score(13) = 0.0011
+R-score(14) = 0.0033
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 132 ms
+Step 2A: Find Neighbor Community Counts: 39 ms
+Step 2B: Compute Edge Weights: 11 ms
+Step 2C: Normalize Edge Weights: 7 ms
+Step 2D: Find BV Predecessor Count: 23 ms
+Step 2E: Compute G' Row Pointer: 4 ms
+Step 2F: Fill G' Column Indices: 33 ms
+Step 3: Compute R Scores: 3236 ms
+Total Execution Time:: 3485 ms
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-pokec.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-pokec.txt -t 11 -t 16 -t 6 -t 2 -t 9 -t 10 -t 1 -t 14 -t 5
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-pokec.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-pokec.txt
+  Num Vertices:     1632803
+  Num Edges:        22301964
+  Communities Used: 9
+-------------------------------------
+Total border vertices: 524220
+max weight: 28.3513
+R-score(1) = 0
+R-score(2) = 0
+R-score(6) = 0.105
+R-score(7) = 0.001
+R-score(9) = 0.001
+R-score(10) = 0.0001
+R-score(11) = 0
+R-score(12) = 0.0006
+R-score(13) = 0.001
+R-score(14) = 0.0054
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 136 ms
+Step 2A: Find Neighbor Community Counts: 47 ms
+Step 2B: Compute Edge Weights: 17 ms
+Step 2C: Normalize Edge Weights: 12 ms
+Step 2D: Find BV Predecessor Count: 24 ms
+Step 2E: Compute G' Row Pointer: 5 ms
+Step 2F: Fill G' Column Indices: 37 ms
+Step 3: Compute R Scores: 4653 ms
+Total Execution Time:: 4931 ms
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-pokec.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-pokec.txt -t 11 -t 16 -t 6 -t 2 -t 9 -t 10 -t 1 -t 14 -t 5 -t 15
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-pokec.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-pokec.txt
+  Num Vertices:     1632803
+  Num Edges:        22301964
+  Communities Used: 10
+-------------------------------------
+Total border vertices: 579562
+max weight: 32.8053
+R-score(1) = 0
+R-score(2) = 0
+R-score(6) = 0.113
+R-score(7) = 0.001
+R-score(9) = 0.0015
+R-score(10) = 0.0001
+R-score(11) = 0
+R-score(12) = 0.0005
+R-score(13) = 0.0012
+R-score(14) = 0.0052
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 132 ms
+Step 2A: Find Neighbor Community Counts: 48 ms
+Step 2B: Compute Edge Weights: 16 ms
+Step 2C: Normalize Edge Weights: 12 ms
+Step 2D: Find BV Predecessor Count: 23 ms
+Step 2E: Compute G' Row Pointer: 5 ms
+Step 2F: Fill G' Column Indices: 38 ms
+Step 3: Compute R Scores: 6049 ms
+Total Execution Time:: 6323 ms
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-livejournal.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-livejournal.txt  -t 2 -t 21 -t 9 -t 6
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-livejournal.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-livejournal.txt
+  Num Vertices:     4033137
+  Num Edges:        27933062
+  Communities Used: 4
+-------------------------------------
+Total border vertices: 223975
+max weight: 8
+R-score(12) = 0.009
+R-score(14) = 0
+R-score(20) = 0.0251
+R-score(23) = 0.0099
+R-score(40) = 0.0036
+R-score(46) = 0.0029
+R-score(62) = 0.0052
+R-score(97) = 0.0072
+R-score(100) = 0.0049
+R-score(164) = 0.0036
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 136 ms
+Step 2A: Find Neighbor Community Counts: 33 ms
+Step 2B: Compute Edge Weights: 8 ms
+Step 2C: Normalize Edge Weights: 2 ms
+Step 2D: Find BV Predecessor Count: 26 ms
+Step 2E: Compute G' Row Pointer: 3 ms
+Step 2F: Fill G' Column Indices: 30 ms
+Step 3: Compute R Scores: 39 ms
+Total Execution Time:: 277 ms
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-livejournal.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-livejournal.txt  -t 2 -t 21 -t 9 -t 6 -t 4
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-livejournal.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-livejournal.txt
+  Num Vertices:     4033137
+  Num Edges:        27933062
+  Communities Used: 5
+-------------------------------------
+Total border vertices: 282258
+max weight: 11.6096
+R-score(12) = 0.0049
+R-score(14) = 0
+R-score(19) = 0
+R-score(20) = 0.0193
+R-score(21) = 0.0001
+R-score(23) = 0.0087
+R-score(25) = 0.0013
+R-score(31) = 0.0043
+R-score(37) = 0.0124
+R-score(38) = 0.0049
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 136 ms
+Step 2A: Find Neighbor Community Counts: 35 ms
+Step 2B: Compute Edge Weights: 9 ms
+Step 2C: Normalize Edge Weights: 3 ms
+Step 2D: Find BV Predecessor Count: 27 ms
+Step 2E: Compute G' Row Pointer: 4 ms
+Step 2F: Fill G' Column Indices: 30 ms
+Step 3: Compute R Scores: 49 ms
+Total Execution Time:: 293 ms
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-livejournal.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-livejournal.txt  -t 2 -t 21 -t 9 -t 6 -t 4 -t 22
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-livejournal.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-livejournal.txt
+  Num Vertices:     4033137
+  Num Edges:        27933062
+  Communities Used: 6
+-------------------------------------
+Total border vertices: 363930
+max weight: 15.5098
+R-score(12) = 0.0037
+R-score(14) = 0
+R-score(19) = 0
+R-score(20) = 0.0175
+R-score(21) = 0.0001
+R-score(23) = 0.0125
+R-score(25) = 0.001
+R-score(31) = 0.0043
+R-score(37) = 0.0093
+R-score(38) = 0.0053
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 136 ms
+Step 2A: Find Neighbor Community Counts: 36 ms
+Step 2B: Compute Edge Weights: 11 ms
+Step 2C: Normalize Edge Weights: 5 ms
+Step 2D: Find BV Predecessor Count: 27 ms
+Step 2E: Compute G' Row Pointer: 4 ms
+Step 2F: Fill G' Column Indices: 32 ms
+Step 3: Compute R Scores: 89 ms
+Total Execution Time:: 340 ms
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-livejournal.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-livejournal.txt  -t 2 -t 21 -t 9 -t 6 -t 4 -t 22 -t 18
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-livejournal.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-livejournal.txt
+  Num Vertices:     4033137
+  Num Edges:        27933062
+  Communities Used: 7
+-------------------------------------
+Total border vertices: 395780
+max weight: 19.1596
+R-score(12) = 0.0031
+R-score(14) = 0
+R-score(19) = 0
+R-score(20) = 0.0161
+R-score(21) = 0.0001
+R-score(23) = 0.0133
+R-score(25) = 0.0009
+R-score(31) = 0.0044
+R-score(33) = 0
+R-score(37) = 0.0142
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 136 ms
+Step 2A: Find Neighbor Community Counts: 38 ms
+Step 2B: Compute Edge Weights: 12 ms
+Step 2C: Normalize Edge Weights: 6 ms
+Step 2D: Find BV Predecessor Count: 27 ms
+Step 2E: Compute G' Row Pointer: 4 ms
+Step 2F: Fill G' Column Indices: 33 ms
+Step 3: Compute R Scores: 96 ms
+Total Execution Time:: 352 ms
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-livejournal.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-livejournal.txt  -t 2 -t 21 -t 9 -t 6 -t 4 -t 22 -t 18 -t 11
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-livejournal.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-livejournal.txt
+  Num Vertices:     4033137
+  Num Edges:        27933062
+  Communities Used: 8
+-------------------------------------
+Total border vertices: 427224
+max weight: 22.9862
+R-score(12) = 0.0025
+R-score(14) = 0
+R-score(19) = 0
+R-score(20) = 0.0151
+R-score(21) = 0.0001
+R-score(23) = 0.0111
+R-score(25) = 0.0013
+R-score(31) = 0.0053
+R-score(33) = 0
+R-score(37) = 0.0128
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 136 ms
+Step 2A: Find Neighbor Community Counts: 39 ms
+Step 2B: Compute Edge Weights: 11 ms
+Step 2C: Normalize Edge Weights: 6 ms
+Step 2D: Find BV Predecessor Count: 29 ms
+Step 2E: Compute G' Row Pointer: 4 ms
+Step 2F: Fill G' Column Indices: 35 ms
+Step 3: Compute R Scores: 108 ms
+Total Execution Time:: 368 ms
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-livejournal.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-livejournal.txt  -t 2 -t 21 -t 9 -t 6 -t 4 -t 22 -t 18 -t 11 -t 3
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-livejournal.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-livejournal.txt
+  Num Vertices:     4033137
+  Num Edges:        27933062
+  Communities Used: 9
+-------------------------------------
+Total border vertices: 451478
+max weight: 28.5293
+R-score(12) = 0.0026
+R-score(14) = 0
+R-score(17) = 0.0004
+R-score(19) = 0
+R-score(20) = 0.0133
+R-score(21) = 0.0001
+R-score(23) = 0.0089
+R-score(25) = 0.0012
+R-score(31) = 0.0048
+R-score(33) = 0
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 138 ms
+Step 2A: Find Neighbor Community Counts: 42 ms
+Step 2B: Compute Edge Weights: 12 ms
+Step 2C: Normalize Edge Weights: 6 ms
+Step 2D: Find BV Predecessor Count: 27 ms
+Step 2E: Compute G' Row Pointer: 4 ms
+Step 2F: Fill G' Column Indices: 34 ms
+Step 3: Compute R Scores: 113 ms
+Total Execution Time:: 376 ms
+
+
+[akkcm@g013 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/code_new/soc-livejournal.mtx -c /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-livejournal.txt  -t 2 -t 21 -t 9 -t 6 -t 4 -t 22 -t 18 -t 11 -t 3 -t 7
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/code_new/soc-livejournal.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/code_new/communties_soc-livejournal.txt
+  Num Vertices:     4033137
+  Num Edges:        27933062
+  Communities Used: 10
+-------------------------------------
+Total border vertices: 475519
+max weight: 31.5564
+R-score(12) = 0.0023
+R-score(14) = 0
+R-score(17) = 0.0004
+R-score(19) = 0
+R-score(20) = 0.013
+R-score(21) = 0.0001
+R-score(23) = 0.0085
+R-score(25) = 0.0012
+R-score(31) = 0.0047
+R-score(33) = 0
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 149 ms
+Step 2A: Find Neighbor Community Counts: 45 ms
+Step 2B: Compute Edge Weights: 15 ms
+Step 2C: Normalize Edge Weights: 9 ms
+Step 2D: Find BV Predecessor Count: 27 ms
+Step 2E: Compute G' Row Pointer: 4 ms
+Step 2F: Fill G' Column Indices: 35 ms
+Step 3: Compute R Scores: 122 ms
+Total Execution Time:: 406 ms
+
+
+[akkcm@g001 build]$ ./r_spanner_cuda -g /mnt/pixstor/data/akkcm/dataset/soc-sinaweibo.mtx -c /mnt/pixstor/data/akkcm/dataset/comm_test_soc-sinaweibo.txt  -t 1 -t 2 -t 3 -t 4 -t 5
+-------------------------------------
+  Input Graph File: /mnt/pixstor/data/akkcm/dataset/soc-sinaweibo.mtx
+  Community File:   /mnt/pixstor/data/akkcm/dataset/comm_test_soc-sinaweibo.txt
+  Num Vertices:     58655849
+  Num Edges:        261321071
+  Communities Used: 5
+-------------------------------------
+Total border vertices: 7499465
+max weight: 11.6096
+R-score(3) = 0.0324
+R-score(5) = 0.1031
+R-score(8) = 0.0968
+R-score(9) = 0.1346
+R-score(10) = 0.6496
+R-score(11) = 0.0144
+R-score(12) = 0.0034
+R-score(16) = 0.0621
+R-score(23) = 0.032
+R-score(25) = 0.4128
+
+======= TIMING REPORT (in ms) =======
+Step 1: Filter Border Vertices: 390 ms
+Step 2A: Find Neighbor Community Counts: 585 ms
+Step 2B: Compute Edge Weights: 132 ms
+Step 2C: Normalize Edge Weights: 70 ms
+Step 2D: Find BV Predecessor Count: 396 ms
+Step 2E: Compute G' Row Pointer: 44 ms
+Step 2F: Fill G' Column Indices: 742 ms
+Step 3: Compute R Scores: 1279038 ms
+Total Execution Time:: 1281397 ms
+

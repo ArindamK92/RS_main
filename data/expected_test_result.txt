@@ -1,0 +1,21 @@
+(base) akhanda@DESKTOP-BNF9MCK:/mnt/c/Phd/CUDA test/Test/test 1/RS_new25/SYCL code/RS-master/RS-master$ ./op_R_spannerNew -g test_graph.mtx -c community_test_graph.txt  
+-t 4 -t 1 -t 3 -t 5 -t 2
+4 : 1 : 3 : 5 : 2 : 
+File name: test_graph.mtx
+Comm name: community_test_graph.txt
+|V|: 17 |E|: 19
+Total community (targeted comm. + 1):6
+Total border vertices: 4
+Time taken (step 1): 175ms
+Time taken (step 2A, 2B): 226ms
+max weight (from reduction): 4.75489
+Time taken (step 2): 135ms
+total undirected edges * 2 in G: 38
+total directed edges in G': 8
+Time taken (step 3): 2ms
+Time taken (step 4): 1ms
+Time taken (total): 539ms
+R-scores: R-score(2)[bv_id:0] = 0.4227 ||
+R-score(3)[bv_id:1] = 0.0427 ||
+R-score(5)[bv_id:2] = 0.1204 ||
+R-score(17)[bv_id:3] = 0.0405 ||
